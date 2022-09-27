@@ -1,0 +1,99 @@
+/*=============== VALUE ===============*/
+.value {
+
+    &__container {
+        row-gap: 3rem;
+    }
+
+    &__images {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__orbe {
+        width: 266px;
+        height: 316px;
+        background-color: hsl(228, 24%, 97%);
+        border-radius: 135px 135px 16px 16px;
+    }
+
+    &__img {
+        position: absolute;
+        width: 250px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 125px 125px 12px 12px;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+    }
+
+    &__description {
+        font-size: var(--small-font-size);
+        margin-bottom: 2rem;
+    }
+
+    &__accordion {
+        display: grid;
+        row-gap: 1.5rem;
+    }
+
+    &__accordion-item {
+        background-color: var(--body-color);
+        border: 2px solid var(--border-color);
+        border-radius:  .5rem;
+        padding: 1rem .75rem;
+    }
+
+    &__accordion-header {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__accordion-icon {
+        background-color: var(--first-color-lighten);
+        border-radius: .25rem;
+        padding: 5px;
+        fill: var(--first-color);
+        margin-right: .75rem;
+        transition: .3s;
+    }
+
+    &__accordion-title {
+        font-size: var(--small-font-size);
+    }
+
+    &__accordion-arrow {
+        display: inline-flex;
+        background-color: var(--first-color-lighten);
+        padding:  .25rem;
+        border-radius: 2px;
+        margin-left: auto;
+        transition: .3s;
+
+        & .icon {
+            fill: var(--first-color);
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    &__accordion-arrow .icon {
+        transition: .4s;
+    }
+
+    &__accordion-description {
+        font-size:  var(--small-font-size);
+        padding: 1.25rem 2.5rem 0 2.75rem;
+    }
+
+    &__accordion-content {
+        overflow: hidden;
+        height: 0;
+        transition: all .25s ease;
+    }
+
+}
+

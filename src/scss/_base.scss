@@ -142,12 +142,16 @@ button {
   overflow: hidden; /* For the animations ScrollReveal*/
 }
 
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--text-color);
+}
 
 /*=============== HEADER & NAV ===============*/
 
 
 
-/* Change background header */
 
 
 /* Active link */
@@ -166,12 +170,59 @@ button {
 
 
 /* Swiper class */
+.swiper {
 
+  &-button-prev::after,
+  &-button-next::after{
+    content: '';
+  }
+
+  &-button-prev,
+  &-button-next{
+    top: initial;
+    bottom: 0;
+    width: initial;
+    background-color: var(--container-color);
+    border: 2px solid var(--text-color-light);
+    padding: 6px;
+    border-radius: .5rem;
+    
+    & .icon {
+      fill: var(--first-color);
+    }
+  }
+
+  &-button-prev {
+    left: calc(50% - 3rem);
+  }
+  &-button-next {
+    right: calc(50% - 3rem);
+  }
+
+
+
+}
 
 /*=============== VALUE ===============*/
 
 
 /*Rotate icon and add shadows*/
+.accordion-open {
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+
+  & .value__accordion-icon {
+    box-shadow: 0 4px 4px hsla(228, 66%, 45%, .1);
+  }
+
+  & .value__accordion-arrow {
+    box-shadow: 0 2px 4px hsla(228, 66%, 45%, .1);
+  }
+  & .value__accordion-arrow .icon{
+    transform:  rotate(-180deg);
+  }
+}
+
+
 
 
 /*=============== CONTACT ===============*/
