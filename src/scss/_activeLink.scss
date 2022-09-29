@@ -1,0 +1,14 @@
+/* Active link */
+
+.active-link {
+    background: linear-gradient(
+        101deg,
+        hsl(228, 66%, 53%),
+        hsl(228, 66%, 47%)
+    );
+    box-shadow: 0 4px 8px hsl(228, 66%, 45%, .25);
+    
+    .nav__icon {
+        fill: #fff;
+    }
+}
