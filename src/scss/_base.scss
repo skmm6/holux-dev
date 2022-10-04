@@ -98,34 +98,16 @@ button {
 
 // ===================== THEME =====================
 .change-theme {
-  fill: #fff;
+  font-size: 1.25rem;
+  color: #fff;
   cursor: pointer;
   transition:  .3s;
 }
 
 .change-theme:hover {
-  fill: var(--first-color);
+  color: var(--first-color);
 }
 
-.nav {
-  .change-theme {
-    fill: #fff;
-  }
-
-  .change-theme:hover {
-    fill: var(--first-color);
-  }
-}
-
-.nav__logo{
-  .nav__icon-logo {
-    fill: #fff;
-    transition: .3s;
-  }
-  &:hover .nav__icon-logo {
-    fill: var(--first-color);
-  }
-}
 
 // ===================== DARK var tHEME =====================
 
@@ -139,6 +121,60 @@ body.dark-theme {
   --border-color: hsl(228, 16%, 14%);
   --body-color: hsl(228, 12%, 8%);
   --container-color: hsl(228, 16%, 12%);
+}
+
+// COLOR changes is some parts of the webwite, in dark theme
+.dark-theme {
+  & .home__search,
+  & .swiper-button-next,
+  & .swiper-button-prev {
+    border: 3px solid var(--border-color);
+  }
+
+  & .nav__menu,
+  & .home__img,
+  & .popular__card:hover,
+  & .value__img,
+  & .accordion-open,
+  & .accordion-open .value__accordion-icon,
+  & .accordion-open .value__accordion-arrow,
+  & .contact__img,
+  & .contact__card-box:hover,
+  & .scrollup {
+    box-shadow: none;
+  }
+
+  & .value__orbe,
+  & .value__accordion-icon,
+  & .value__accordion-arrow,
+  & .contact__orbe,
+  & .contact__card-icon,
+  & .contact__card-button,
+  & .subscribe__container {
+    background-color: var(--container-color);
+  }
+
+  & .subscribe__container {
+    border: 6px solid var(--border-color);
+  }
+
+  & .subscribe__description {
+    color: var(--text-color);
+  }
+
+  &::-webkit-scrollbar {
+    background-color: hsl(228, 4%, 15%);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: hsl(228, 4%, 25%);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(228, 4%, 35%);
+  }
+
+
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/

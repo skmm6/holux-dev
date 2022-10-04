@@ -1,6 +1,7 @@
 import * as name from './js/modules/main';
 import * as accordions from './js/modules/accordion';
 import * as scroll from './js/modules/scrollsecActivLink';
+import * as theme from './js/modules/theme';
 // import Swiper JS
   // core version + navigation, pagination modules:
   import Swiper, { Navigation, Pagination } from 'swiper';
@@ -49,3 +50,4 @@ const swiperPopularOb = new Swiper(".popular__container", {
 
 window.addEventListener('scroll', scroll.scrollActive);
 window.addEventListener('scroll', scroll.scrollUp);
+theme.darkTheme();
