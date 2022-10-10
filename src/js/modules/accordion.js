@@ -30,6 +30,4 @@ export const accordions = function() {
         }    
     }
 
-
-
 }
